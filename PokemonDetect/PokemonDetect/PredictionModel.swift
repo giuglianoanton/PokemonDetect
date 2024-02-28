@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Prediction{
+struct Prediction: Equatable{
     let classification: String
     let confidencePercentage: String
 }
