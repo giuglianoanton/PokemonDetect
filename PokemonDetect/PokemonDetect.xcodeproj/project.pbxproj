@@ -18,6 +18,7 @@
 		A95375892B8FA556001CB678 /* PredictionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95375882B8FA556001CB678 /* PredictionModel.swift */; };
 		A953758B2B8FA56D001CB678 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A953758A2B8FA56D001CB678 /* Extensions.swift */; };
 		A953758D2B8FA587001CB678 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A953758C2B8FA587001CB678 /* ViewModel.swift */; };
+		A953758F2B909EAA001CB678 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A953758E2B909EAA001CB678 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A95375882B8FA556001CB678 /* PredictionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionModel.swift; sourceTree = "<group>"; };
 		A953758A2B8FA56D001CB678 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A953758C2B8FA587001CB678 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A953758E2B909EAA001CB678 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				A953755E2B8FA4D7001CB678 /* ContentView.swift */,
 				A95375882B8FA556001CB678 /* PredictionModel.swift */,
 				A953758A2B8FA56D001CB678 /* Extensions.swift */,
+				A953758E2B909EAA001CB678 /* CameraView.swift */,
 				A953758C2B8FA587001CB678 /* ViewModel.swift */,
 				A95375602B8FA4D8001CB678 /* Assets.xcassets */,
 				A95375622B8FA4D8001CB678 /* Preview Content */,
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A953758B2B8FA56D001CB678 /* Extensions.swift in Sources */,
+				A953758F2B909EAA001CB678 /* CameraView.swift in Sources */,
 				A953755F2B8FA4D7001CB678 /* ContentView.swift in Sources */,
 				A95375872B8FA527001CB678 /* PokemonClassifier.mlmodel in Sources */,
 				A95375892B8FA556001CB678 /* PredictionModel.swift in Sources */,
@@ -441,6 +445,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "access camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -470,6 +475,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "access camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
