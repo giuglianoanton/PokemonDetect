@@ -9,10 +9,15 @@ import SwiftUI
 import PhotosUI
 
 struct ContentView: View {
+    
     @StateObject var viewModel = ViewModel()
+    
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImage: UIImage? = nil
+    
     @State private var showCamera = false
+    @State private var showPicker = false
+    @State private var showOptions = false
     
     @State var pokemon = ""
     
@@ -28,27 +33,27 @@ struct ContentView: View {
                 Text(pokemon)
             }
             Spacer()
-            VStack{
+            Button(action: {
+                showOptions.toggle()
+            }, label: {
                 Image("pokeball").resizable()
                     .scaledToFit()
                     .frame(width: 100, height: 100)
-                
-                PhotosPicker(
-                    selection: $selectedItem,
-                    matching: .images,
-                    photoLibrary: .shared()) {
-                        
-                        Text("Select a pokemon")
-                    }
-                Button(action: {
+            })
+            .confirmationDialog("", isPresented: $showOptions, titleVisibility: .visible) {
+                Button("Camera") {
+                    viewModel.prediction = nil
                     self.showCamera.toggle()
-                }, label: {
-                    Text("Camera")
-                })
-                .fullScreenCover(isPresented: self.$showCamera) {
-                    CameraView(selectedImage: self.$selectedImage)
                 }
-                
+                Button("Select from Photos") {
+                    viewModel.prediction = nil
+                    self.showPicker.toggle()
+                }
+            }
+            .photosPicker(isPresented: $showPicker, selection: $selectedItem)
+            
+            .fullScreenCover(isPresented: self.$showCamera) {
+                CameraView(selectedImage: self.$selectedImage)
             }
             
             .onChange(of: selectedItem) { newItem in
@@ -59,12 +64,12 @@ struct ContentView: View {
                     }
                 }
             }
-        
+            
             
             if let uiImage = selectedImage, viewModel.prediction == nil {
                 Button(action: {
                     viewModel.classifyPokemon(image: uiImage)
-                    pokemon = "\(viewModel.prediction!.classification) \(viewModel.prediction!.confidencePercentage)"
+                    pokemon = viewModel.prediction!.classification == "other" ? "this is not a pokemon" : "\(viewModel.prediction!.classification) \(viewModel.prediction!.confidencePercentage)" 
                 }, label: {
                     Text("Detect this Pokemon")
                 })

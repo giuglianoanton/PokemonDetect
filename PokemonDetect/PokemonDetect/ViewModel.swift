@@ -19,9 +19,9 @@ class ViewModel: ObservableObject {
             let pokemonClassifier = try PokemonClassifier(configuration: MLModelConfiguration())
             let model = try VNCoreMLModel(for: pokemonClassifier.model)
             let request = VNCoreMLRequest(model: model)
-#if targetEnvironment(simulator)
-            request.usesCPUOnly = true;
-#endif
+            #if targetEnvironment(simulator)
+                request.usesCPUOnly = true;
+            #endif
             handler = VNImageRequestHandler(cgImage: (image.cgImage!))
             try handler!.perform([request])
             handleResults(request: request)
