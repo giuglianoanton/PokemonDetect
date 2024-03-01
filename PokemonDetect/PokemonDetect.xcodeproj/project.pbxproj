@@ -18,7 +18,7 @@
 		A953758B2B8FA56D001CB678 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A953758A2B8FA56D001CB678 /* Extensions.swift */; };
 		A953758D2B8FA587001CB678 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A953758C2B8FA587001CB678 /* ViewModel.swift */; };
 		A953758F2B909EAA001CB678 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A953758E2B909EAA001CB678 /* CameraView.swift */; };
-		A95375912B90C0D1001CB678 /* PokemonClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A95375902B90C0D1001CB678 /* PokemonClassifier.mlmodel */; };
+		A95375952B91F6DC001CB678 /* PokemonClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = A95375942B91F6DC001CB678 /* PokemonClassifier.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 		A953758A2B8FA56D001CB678 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A953758C2B8FA587001CB678 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A953758E2B909EAA001CB678 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		A95375902B90C0D1001CB678 /* PokemonClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PokemonClassifier.mlmodel; path = ../../../../../Documents/PokemonClassifier.mlmodel; sourceTree = "<group>"; };
+		A95375942B91F6DC001CB678 /* PokemonClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = PokemonClassifier.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				A953755E2B8FA4D7001CB678 /* ContentView.swift */,
 				A95375882B8FA556001CB678 /* PredictionModel.swift */,
 				A953758A2B8FA56D001CB678 /* Extensions.swift */,
+				A95375942B91F6DC001CB678 /* PokemonClassifier.mlpackage */,
 				A953758E2B909EAA001CB678 /* CameraView.swift */,
-				A95375902B90C0D1001CB678 /* PokemonClassifier.mlmodel */,
 				A953758C2B8FA587001CB678 /* ViewModel.swift */,
 				A95375602B8FA4D8001CB678 /* Assets.xcassets */,
 				A95375622B8FA4D8001CB678 /* Preview Content */,
@@ -276,9 +276,9 @@
 				A953758F2B909EAA001CB678 /* CameraView.swift in Sources */,
 				A953755F2B8FA4D7001CB678 /* ContentView.swift in Sources */,
 				A95375892B8FA556001CB678 /* PredictionModel.swift in Sources */,
+				A95375952B91F6DC001CB678 /* PokemonClassifier.mlpackage in Sources */,
 				A953758D2B8FA587001CB678 /* ViewModel.swift in Sources */,
 				A953755D2B8FA4D7001CB678 /* PokemonDetectApp.swift in Sources */,
-				A95375912B90C0D1001CB678 /* PokemonClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

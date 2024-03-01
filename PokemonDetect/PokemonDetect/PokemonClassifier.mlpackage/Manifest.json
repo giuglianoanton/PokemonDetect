@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "022A87DA-5D36-44A8-94AE-62D4D0C12640": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "PokemonDetect 14.mlmodel",
+            "path": "com.apple.CoreML/PokemonDetect 14.mlmodel"
+        },
+        "0DD6182D-842B-43E7-8186-43B802A1243D": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "98835B3D-8389-41BC-85C1-97B8162EBF33": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        }
+    },
+    "rootModelIdentifier": "022A87DA-5D36-44A8-94AE-62D4D0C12640"
+}
